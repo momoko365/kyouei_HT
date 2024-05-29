@@ -1,0 +1,19 @@
+{
+  "入出庫番号": null,
+  "行番号": null,
+  "得意先KEY": null,
+  "商品KEY": null,
+  "ロケーション": null,
+  "ロット": null,
+  "入出荷数量１": null,
+  "入出荷数量２": null,
+  "入出荷済み数量１": null,
+  "入出荷済み数量２":null,
+  "賞味期限": null,
+  "JANコード": null,
+  "ロケーションFLAG": null,
+  "ロットFLAG": null,
+  "入出庫区分": null,
+  "在庫数１": null,
+  "在庫数２": null
+}

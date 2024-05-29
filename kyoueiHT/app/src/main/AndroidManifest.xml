@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KyoueiHTApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name=".ui.theme.Start_Screen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.KyoueiHTApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.theme.Start_Worker_Name"></activity>
+        <activity android:name=".ui.theme.Start_Main_Menu"></activity>
+        <activity android:name=".ui.theme.Start_Souko_Input"></activity>
+        <activity android:name=".ui.theme.Start_Inventory_Day"></activity>
+        <activity android:name=".ui.theme.Nyuko_Goods"></activity>
+        <activity android:name=".ui.theme.Nyuko_Quantity_Int"></activity>
+        <activity android:name=".ui.theme.Nyuko_Kakutei"></activity>
+        <activity android:name=".ui.theme.Nyuko_Int_Num"></activity>
+        <activity android:name=".ui.theme.Nyuko_Barcode"></activity>
+        <activity android:name=".ui.theme.Nyuko_Location"></activity>
+        <activity android:name=".ui.theme.Nyuko_Lotto"></activity>
+        <activity android:name=".ui.theme.Nyuko_Deadline"></activity>
+        <activity android:name=".ui.theme.Syukko_Barcode"></activity>
+        <activity android:name=".ui.theme.Syukko_Goods"></activity>
+        <activity android:name=".ui.theme.Syukko_Int_Num"></activity>
+        <activity android:name=".ui.theme.Syukko_Location"></activity>
+        <activity android:name=".ui.theme.Syukko_Lotto"></activity>
+        <activity android:name=".ui.theme.Syukko_Deadline"></activity>
+        <activity android:name=".ui.theme.Syukko_Quantity_Int"></activity>
+        <activity android:name=".ui.theme.Syukko_Kakutei"></activity>
+        <activity android:name=".ui.theme.Error_Message"></activity>
+        <!--        <activity android:name=".ui.theme.Data_Save"></activity>-->
+        <activity android:name=".ui.theme.Start_Work_Day"></activity>
+        <activity android:name=".ui.theme.Import_Json"></activity>
+        <activity android:name=".ui.theme.QRCodeMain"></activity>
+        <activity
+            android:name=".ui.theme.QRCodeCaptureActivity"
+            android:exported="false"></activity>
+        <activity android:name=".ui.theme.QR_Start_Inspection"></activity>
+        <activity
+            android:name=".ui.theme.QRCodeCaptureActivity_Inspection"
+            android:exported="false"></activity>
+        <activity android:name=".ui.theme.QR_MikenpinItem"
+            android:exported="false"></activity>
+        <activity android:name=".ui.theme.QR_Kenpin_Finish"></activity>
+        <activity android:name=".ui.theme.QR_Kenpin_Naiyo"></activity>
+
+    </application>
+
+</manifest>

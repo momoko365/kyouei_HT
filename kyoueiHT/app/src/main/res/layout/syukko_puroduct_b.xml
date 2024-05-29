@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/title"
+
+        android:layout_width="418dp"
+
+        android:layout_height="68dp"
+
+        android:background="#A0BDE6"
+
+        android:text=" 商品バーコード入力"
+
+        android:textSize="19pt"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/back_btn"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#A0BDE6"
+
+        android:text="戻る"
+
+        android:textSize="20pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/next_btn"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#A0BDE6"
+
+        android:text="次へ"
+
+        android:textSize="20pt"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <TextView
+
+        android:id="@+id/output_number_text"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+
+        android:text="出庫予定No"
+
+        android:textSize="18pt"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+
+        android:id="@+id/output_number"
+
+        android:layout_width="352dp"
+
+        android:layout_height="57dp"
+
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="16dp"
+
+        android:text="123456789"
+
+        android:textSize="18pt"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_number_text" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="352dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="商品バーコードを\n入力してください"
+        android:textSize="18pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_goods" />
+
+    <EditText
+        android:id="@+id/puroduct_b"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/kurobuti"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:text="1234567891234"
+        android:textSize="18pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity" />
+
+    <TextView
+        android:id="@+id/selected_goods"
+        android:layout_width="352dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:text="商品１"
+        android:textSize="18pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_number" />
+</androidx.constraintlayout.widget.ConstraintLayout>
